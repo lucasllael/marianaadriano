@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mariana Adriano | Psicóloga Clínica</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <header class="header">
+        <div class="container">
+          <a href="#" class="logo">MARIANA ADRIANO</a>
+          
+          <nav class="desktop-nav">
+            <a href="index.html#about" class="nav-link">Sobre</a>
+            <a href="index.html#specialties" class="nav-link">Especialidades</a>
+            <a href="index.html#testimonials" class="nav-link">Depoimentos</a>
+            <a href="index.html #contact" class="nav-link">Contato</a>
+          </nav>
+          
+          <a href="#contact" class="btn-primary header-btn">
+            Agende sua sessão
+          </a>
+          
+          <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+            <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <nav>
+          <a href="index.html#about" class="mobile-nav-link">Sobre</a>
+          <a href="index.html#specialites" class="mobile-nav-link">Especialidades</a>
+          <a href="index.html#testimonials" class="mobile-nav-link">Depoimentos</a>
+          <a href="index.html#contact" class="mobile-nav-link">Contato</a>
+        </nav>
+      </div>
+
+  <main>
+    <!-- About Section with Modern Design -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image-container">
+          <img src="assets/MARIANA PÒS-6.jpg" alt="Mariana Adriano - Psicóloga Clínica" class="about-profile-image">
+          <div class="image-gradient-overlay"></div>
+        </div>
+        
+        <div class="about-content">
+          <h1 class="about-name">Mariana Adriano</h1>
+          
+          <div class="about-text">
+            <p>Seja bem vindo a minha história profissional! Me chamo <strong>Mariana Adriano</strong>, sou Psicóloga Clínica. Realizo atendimento a idosos, adultos e adolescentes. Atendo presencialmente na <strong>B.OFFICE</strong> em Biguaçu/SC e <strong>online</strong> atendo clientes do mundo todo. Sou graduada em <strong>Psicologia</strong>. Pós-graduanda em <strong>Psicanálise</strong> e Pós-graduanda em <strong>Terapia Cognitivo-Comportamental (TCC).</strong> </p>
+            
+            <p>Minha paixão por compreender o ser humano me levou à <strong>psicologia</strong>, onde encontrei <strong>meu verdadeiro propósito</strong>: utilizar essa ciência para promover bem-estar, equilíbrio e saúde emocional. É isso que me motiva e me faz dedicar o meu melhor em cada atendimento.
+            Como psicóloga, minha missão é oferecer acolhimento, escuta sem julgamento e ação. Proporciono um espaço acolhedor para que as inquietações possam ser compartilhadas, escuto atentamente para ajudar o cliente a entender suas dificuldades e intervenho para que, na medida do possível, o cliente alcance mais liberdade e sabedoria em sua jornada.
+            </p>
+            
+            <p>Participei do Projeto Flores da Clô: O projeto visava ofertar atendimento jurídico e psicológico (gratuito) a pessoas em situação de enfrentamento de violência doméstica ou de gênero, ou que pleiteiam direitos civis para a população LGBTQ+</p>
+            
+            <p>Trabalhei voluntariamente na ACV (Associação Caminhos para A Vida): Organização sem fins lucrativos, que visa transformar a vida de jovens e adultos com deficiência intelectual, múltiplas e Transtorno do Espectro Autista.</p>
+            
+            <h3>Formação e Experiência</h3>
+            <ul class="experience-list">
+              <li><span class="experience-number">1</span> <strong>Graduação:</strong>Graduação em Psicologia</li>
+              <li><span class="experience-number">2</span> <strong>Pós-Graduação:</strong> Pós-graduanda em Psicanálise e Terapia Cognitivo-Comportamental (TCC)</li>
+              <li><span class="experience-number">3</span> <strong>Atuação:</strong> Adolescentes, adultos e idosos. Participações no Projeto Flores da Clô e voluntariado na ACV.</li>
+            </ul>
+            
+            <div class="contact-button-container">
+              <a href="index.html#contact" class="btn-primary contact-btn">Entre em contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+      <script src="https://unpkg.com/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lenis = new Lenis({
+        duration: 1.2, // Ajuste a duração do efeito
+        smooth: true, 
+        });
+
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    });
+    </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
